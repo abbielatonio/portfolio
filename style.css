@@ -145,7 +145,7 @@ justify-content: center;
 /* area - service items */
 .item3 {
   grid-area: service2;
-    background-color: #565ACD;
+  background-color: #5E62D1;
   font-family: 'roboto';
   color:#FFFFFF;
   display: flex;
