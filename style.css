@@ -112,7 +112,7 @@ html {
 /* area - intros */
 .item1b {
   grid-area: header2;
-  background-color: #5E62D1;
+  background-color: #565ACD;
   font-family: 'roboto';
   color:#5FECC8;
   display: flex;
@@ -132,7 +132,7 @@ html {
 /* area - service title */
 .item2 {
   grid-area: service;
-  background-color: #565ACD;
+  background-color: #5E62D1;
     text-transform: uppercase;
   font-size: 2.3rem;
   font-family: 'roboto';
