@@ -6,6 +6,9 @@ body {
   margin:0;
 	background: linear-gradient(#fafafa, #636262 70%);
 }
+body > * {
+    padding: 1rem;
+}
 body {
   grid-template-columns: auto;
   grid-template-rows: 2px 70px 20px auto auto auto auto auto auto auto auto;
@@ -140,6 +143,10 @@ justify-content: center;
   flex-direction: column;
 } 
 /* area - service items */
+.item3, .item8 {
+  min-height: 20vh; /* or another consistent unit */
+}
+
 .item3 {
   grid-area: service2;
   background-color: #5E62D1;
@@ -371,7 +378,4 @@ a:link, a:visited {
   height: 300px;
   object-fit: cover;
   
-}
-.item2, .item8 {
-  padding: 1rem;
 }
