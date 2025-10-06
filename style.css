@@ -80,7 +80,7 @@ html {
 /* area - logo */
 .item00 {
   grid-area: nav2;
-  background-color: #5E62D1;
+  background-color: #565ACD;
   padding:0; 
 }
 /* area - nav*/
@@ -102,7 +102,7 @@ html {
   font-size: 4vw;
   font-family: 'roboto';
   font-weight: 100;
-  color:#565ACD;
+  color:#5E62D1;
   display: flex;
   justify-content: center;
   align-items: flex-end;
