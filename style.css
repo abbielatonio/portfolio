@@ -141,8 +141,6 @@ html {
   display: flex;
 justify-content: center;
   flex-direction: column;
-	  padding: 1rem;
-}
 } 
 /* area - service items */
 .item3 {
@@ -376,4 +374,17 @@ a:link, a:visited {
   height: 300px;
   object-fit: cover;
   
+}
+.item2, .item8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  padding: 1rem;
+  min-height: 20vh;
+}
+
+.item2 *, .item8 * {
+  margin: 0;
 }
