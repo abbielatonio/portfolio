@@ -11,7 +11,7 @@ body > * {
 }
 body {
   grid-template-columns: auto;
-  grid-template-rows: 2px 70px 20px auto 50vh 50vh auto auto auto auto auto;
+  grid-template-rows: 2px 70px 20px auto auto auto auto auto auto auto auto;
   display: grid;
   grid-template-areas:
   'nav2'
@@ -65,7 +65,7 @@ html {
 }
   body {  
       grid-template-columns: auto auto auto;
-      grid-template-rows: 30vh 70vh 100vh auto auto auto auto;
+      grid-template-rows: 30vh 70vh 150vh auto auto auto auto;
       display: grid;
       grid-template-areas:
       'nav2 nav2 nav'
