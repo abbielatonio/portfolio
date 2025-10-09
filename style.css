@@ -351,21 +351,23 @@ a:link, a:visited {
 /*...........................................................................*/
 
 .container {
-  overflow: hidden; /* keeps edges clean during scale */
-  background-color: transparent; /* no grey background */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 15px;
 }
-
 .container img {
   width: 100%;
   display: block;
-  background-color: transparent; /* prevents any grey box */
-  filter: grayscale(100%); /* start fully greyed out */
-  transition: filter 0.3s ease, transform 0.3s ease; /* smooth hover */
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: all 100ms ease-out;
+  
 }
-
 .container img:hover {
   transform: scale(1.04);
-  filter: grayscale(0%); /* back to full color */
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 .item img {
   width: 300px;
