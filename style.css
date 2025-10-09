@@ -351,26 +351,21 @@ a:link, a:visited {
 /*...........................................................................*/
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 15px;
-	  background-color: transparent; /* make sure no grey box */
-  overflow: hidden; /* keeps image edges clean when scaling */
+  overflow: hidden; /* keeps edges clean during scale */
+  background-color: transparent; /* no grey background */
 }
 
-}
 .container img {
   width: 100%;
   display: block;
-  background-color: transparent; /* prevents grey background */
-  filter: grayscale(100%);
-  transition: all 0.3s ease-out;
+  background-color: transparent; /* prevents any grey box */
+  filter: grayscale(100%); /* start fully greyed out */
+  transition: filter 0.3s ease, transform 0.3s ease; /* smooth hover */
 }
 
 .container img:hover {
   transform: scale(1.04);
-  filter: grayscale(0%);
+  filter: grayscale(0%); /* back to full color */
 }
 .item img {
   width: 300px;
