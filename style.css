@@ -355,19 +355,22 @@ a:link, a:visited {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 15px;
+	  background-color: transparent; /* make sure no grey box */
+  overflow: hidden; /* keeps image edges clean when scaling */
+}
+
 }
 .container img {
   width: 100%;
   display: block;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  transition: all 100ms ease-out;
-  
+  background-color: transparent; /* prevents grey background */
+  filter: grayscale(100%);
+  transition: all 0.3s ease-out;
 }
+
 .container img:hover {
   transform: scale(1.04);
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
+  filter: grayscale(0%);
 }
 .item img {
   width: 300px;
